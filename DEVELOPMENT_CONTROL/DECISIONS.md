@@ -32,3 +32,4 @@
 | 2026-09-14 | Website terms state intended governing law of Uganda with counsel-review caveat; not a full legal opinion. |
 | 2026-09-14 | PDPO registration / DPO status not published pending owner operational decision. |
 | 2026-09-14 | V2 deploy remains gated on owner review of legal completion; this step does not authorize Vercel deploy or LE-2. |
+| 2026-09-14 | Production URL observed: https://handzjtech-solutions.vercel.app/ — LE-1 + completed legal pages present on live host. |

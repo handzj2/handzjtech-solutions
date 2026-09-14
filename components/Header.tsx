@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import MobileNav from "@/components/MobileNav";
@@ -10,9 +11,19 @@ export default function Header() {
       <Container className="flex h-16 items-center justify-between">
         <Link
           href="/"
-          className="text-base font-semibold tracking-tight text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="flex items-center gap-2.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
-          {company.name}
+          <Image
+            src="/icon-192.png"
+            alt=""
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-full"
+            priority
+          />
+          <span className="text-base font-semibold tracking-tight text-white">
+            {company.name}
+          </span>
         </Link>
 
         <nav aria-label="Primary" className="hidden sm:block">

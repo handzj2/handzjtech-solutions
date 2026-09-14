@@ -15,7 +15,8 @@
 | 5 — **LE-1** | Lead Engine Phase 1 contextual conversion | **ACCEPTED** |
 | 5 — LE-1 evidence period | Qualified-conversation measurement (manual) | **IN PROGRESS** |
 | 5 — LE-2 | Not defined | **NOT AUTHORIZED** |
-| 5 — **V2 production release** | Deploy LE-1-accepted site to Vercel | **DEPLOYMENT BLOCKED** (build/auth environment) |
+| 5 — **V2 production release** | Deploy LE-1-accepted site to Vercel | **LIVE on Vercel** — production verification PASS (agent smoke test 2026-09-14); owner final acceptance optional |
+| 5 — Evidence period | Qualified conversation measurement | **IN PROGRESS** |
 
 ## LE-1 acceptance
 
