@@ -12,7 +12,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Products",
-  description: "Lending, loan management, business-management, and digital receipts software from HandzJ Tech Solutions.",
+  description: "Lending, loan management, business-management, and digital receipts software from HandzJ Tech Solutions."
 };
 
 export default function ProductsPage() {

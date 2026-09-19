@@ -30,7 +30,6 @@ directly to its own, separately-deployed application at https://recipting.vercel
 (external link, `target="_blank"`). No `/products/digital-receipts` route exists or is
 planned — the product already has a live application, so a HandzJ Tech-hosted detail
 page would duplicate rather than serve it. See DECISIONS.md, 2026-09-19.
-
 ## Rules
 - No city doorway URLs.
 - Legal pages are linked from the footer, not primary navigation.
