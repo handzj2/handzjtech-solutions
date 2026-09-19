@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens — candidate palette, Phase 5 Increment 4.
+   See DEVELOPMENT_CONTROL/DESIGN_SYSTEM.md.
+   Signal Green is candidate primary; not final official brand. */
+:root {
+  --color-ink: #101820;
+  --color-ink-soft: #263238;
+  --color-ivory: #f7f5ef;
+  --color-mist: #e5e8e6;
+  --color-brand: #16836a;
+  --color-brand-dark: #0d5c4a;
+  --color-amber: #d99a2b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-ivory text-ink antialiased;
+}
+
+/* System-line motif — extremely subtle technical identity element */
+.system-line {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.system-line::before,
+.system-line::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.55;
+  flex-shrink: 0;
+}
+.system-line-bar {
+  height: 1px;
+  flex: 1;
+  background: currentColor;
+  opacity: 0.35;
+  min-width: 1.5rem;
+}
+
+/* Focus treatment */
+.focus-ring {
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand;
+}
